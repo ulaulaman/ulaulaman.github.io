@@ -173,6 +173,8 @@ Error message and password prompt
 
 <li>$:/state/tab-1163638994</li>
 
+<li>$:/state/tab-120686989</li>
+
 <li>$:/state/tab-1749438307</li>
 
 <li>$:/state/tab-2065006209</li>
@@ -186,6 +188,8 @@ Error message and password prompt
 <li>$:/state/tabs/controlpanel/toolbars-1345989671</li>
 
 <li>$:/state/tag-manager/about</li>
+
+<li>$:/state/tree/$:/tags/</li>
 
 <li>$:/status/RequireReloadDueToPluginChange</li>
 
@@ -216,6 +220,10 @@ Error message and password prompt
 <li>GettingStarted</li>
 
 <li>Menu</li>
+
+<li>Table-of-Contents Macros</li>
+
+<li>TableOfContents</li>
 
 <li>ulaulaman</li>
 
@@ -9612,14 +9620,13 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200728100500119" creator="ulaulaman" modified="20200728185635224" modifier="ulaulaman" title="$:/DefaultTiddlers">
-<pre>Menu</pre>
+<div created="20200728100500119" creator="ulaulaman" modified="20200731225746817" modifier="ulaulaman" title="$:/DefaultTiddlers">
+<pre>ulaulaman</pre>
 </div>
 <div status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
 
-# [[$:/themes/jd/Whitespace]]
-# [[$:/theme]]</pre>
+# [[Table-of-Contents Macros]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -10024,6 +10031,9 @@ Error message and password prompt
 <div created="20200728101440836" modified="20200728102753117" title="$:/state/tab-1163638994">
 <pre>$:/core/ui/MoreSideBar/Plugins/Plugins</pre>
 </div>
+<div created="20200731215450591" creator="ulaulaman" modified="20200731215453551" modifier="ulaulaman" title="$:/state/tab-120686989">
+<pre>$:/core/ui/MoreSideBar/Plugins/Plugins</pre>
+</div>
 <div created="20200728100735242" creator="ulaulaman" modified="20200728190508416" modifier="ulaulaman" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
@@ -10033,8 +10043,8 @@ Error message and password prompt
 <div created="20200728101438595" modified="20200728101438595" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Plugins</pre>
 </div>
-<div created="20200728185745371" creator="ulaulaman" modified="20200728191946232" modifier="ulaulaman" title="$:/state/tab/moresidebar-358244441">
-<pre>$:/core/ui/MoreSideBar/Tags</pre>
+<div created="20200728185745371" creator="ulaulaman" modified="20200731225207227" modifier="ulaulaman" title="$:/state/tab/moresidebar-358244441">
+<pre>$:/core/ui/MoreSideBar/Orphans</pre>
 </div>
 <div created="20200728100902299" creator="ulaulaman" modified="20200728124327173" modifier="ulaulaman" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
@@ -10045,13 +10055,16 @@ Error message and password prompt
 <div created="20200728192009632" creator="ulaulaman" modified="20200728192015552" modifier="ulaulaman" title="$:/state/tag-manager/about">
 <pre>closed</pre>
 </div>
+<div created="20200731221337024" creator="ulaulaman" modified="20200731221337024" modifier="ulaulaman" title="$:/state/tree/$:/tags/">
+<pre>show</pre>
+</div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
 <div created="20200728124256197" creator="u" modified="20200728124300028" modifier="ulaulama" title="$:/status/UserName">
 <pre>ulaulaman</pre>
 </div>
-<div created="20200728192536061" creator="ulaulaman" list="Menu ulaulaman" modified="20200728192715482" modifier="ulaulaman" title="$:/StoryList">
+<div list="ulaulaman" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10112,7 +10125,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200728100359161" creator="ulaulaman" modified="20200728192423744" modifier="ulaulaman" title="$:/temp/NewTagName">
+<div created="20200728100359161" creator="ulaulaman" modified="20200731221249741" modifier="ulaulaman" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20180826061648522" modifier="jd" title="$:/theme">
@@ -10439,20 +10452,79 @@ See the [[control panel|$:/ControlPanel]] for more options.
 <pre>| TikzDraw | EduINAF | CitationsTools | BookTemplate | WidgetForCoAuthors |
 |:------|:------|:------|:------|:------|</pre>
 </div>
-<div created="20200728124602616" creator="ulaulaman" modified="20200728192758348" modifier="ulaulaman" tags="about" title="ulaulaman">
-<pre>''Gianluigi Filippelli'', divulgatore e blogger scientifico.
-Wikipediano, gestisco il sito Edu INAF.
+<div created="20140919155729620" modified="20150221224034000" tags="Macros [[Core Macros]]" title="Table-of-Contents Macros" type="text/vnd.tiddlywiki">
+<pre>~TiddlyWiki provides several macros for generating a tree of tiddler links by analysing [[tags|Tagging]]:
 
-!! Blog
-[[DropSea|https://dropseaofulaula.blogspot.com/]]
+;&lt;&lt;.var toc&gt;&gt;
+: A simple tree
+;&lt;&lt;.var toc-expandable&gt;&gt;
+: A tree in which all the branches can be expanded and collapsed
+;&lt;&lt;.var toc-selective-expandable&gt;&gt;
+: A tree in which the non-empty branches can be expanded and collapsed
+;&lt;&lt;.var toc-tabbed-internal-nav&gt;&gt; and &lt;&lt;.var toc-tabbed-external-nav&gt;&gt;
+: A two-panel browser:
+:* on the left, a selectively expandable tree that behaves like a set of vertical tabs
+:* on the right, the content of whichever tiddler the user selects in the tree
 
-!! Collaborazioni
+The difference between the last two has to do with what happens when the user clicks a link in the right-hand panel:
 
-!! Plugin e repositories su ~GitHub
+;&lt;&lt;.var toc-tabbed-internal-nav&gt;&gt;
+: The target tiddler appears in the right-hand panel, replacing the tiddler that contained the link
+;&lt;&lt;.var toc-tabbed-external-nav&gt;&gt;
+: The target tiddler appears in the normal way (which depends on the user's configured storyview)
 
-!!! Wordpress plugin
+!! Structure
 
-!!! Presentazioni e infografiche
+The top level of the tree consists of the tiddlers that carry a particular tag, known as the &lt;&lt;.def &quot;root tag&quot;&gt;&gt;. Tiddlers tagged with any of those make up the next level down, and so on.
+
+At each level, the tiddlers can be [[ordered|Order of Tagged Tiddlers]] by means of the &lt;&lt;.field list&gt;&gt; field of the parent tag tiddler. They can also be ordered by the macro's &lt;&lt;.param sort&gt;&gt; parameter.
+
+The tree displays the &lt;&lt;.field caption&gt;&gt; field of a tiddler if it has one, or the tiddler's title otherwise.
+
+Each tiddler in the tree is normally displayed as a link. To suppress this, give the tiddler a &lt;&lt;.field toc-link&gt;&gt; field with the the value &lt;&lt;.value no&gt;&gt;. In the [[examples|Table-of-Contents Macros (Examples)]], the SecondThree tiddler is set up like this. Clicking such a tiddler in the tree causes its branch to expand or collapse.
+
+The table of contents is generated as an HTML ordered list. The `&lt;ol&gt;` elements always have the class `tc-toc`. Expandable trees have the additional class `tc-toc-expandable`. Selectively expandable trees (including those in the two-panel browser) have `tc-toc-selective-expandable`.
+
+To make a table of contents appear in the sidebar, see [[How to add a new tab to the sidebar]].
+
+!! Parameters
+
+;tag
+: The root tag that identifies the top level of the tree
+;sort
+: An optional extra [[filter step|Filter Step]], e.g. `sort[title]`
+
+These two parameters are combined into a single [[filter expression|Filter Expression]] like this:
+
+&gt; `[tag[$tag$]$sort$]`
+
+&lt;&lt;.var toc-tabbed-internal-nav&gt;&gt; and &lt;&lt;.var toc-tabbed-external-nav&gt;&gt; take additional parameters:
+
+;selectedTiddler
+: The title of the [[state tiddler|StateMechanism]] for noting the currently selected tiddler, defaulting to `$:/temp/toc/selectedTiddler`. It is recommended that this be a [[system tiddler|SystemTiddlers]]
+;unselectedText
+: The text to display when no tiddler is selected in the tree
+;missingText
+: The text to display if the selected tiddler doesn't exist
+;template
+: Optionally, the title of a tiddler to use as a [[template|TemplateTiddlers]] for transcluding the selected tiddler into the right-hand panel
+
+[[Examples|Table-of-Contents Macros (Examples)]]
+</pre>
+</div>
+<div caption="Menu" created="20200731221138465" creator="ulaulaman" list="TikzDraw EduINAF CitationsTools BookTemplate WidgetForCoAuthors" list-before="$:/core/ui/SideBar/Open" modified="20200731225658109" modifier="ulaulaman" tags="$:/tags/SideBar" title="TableOfContents" type="text/vnd.tiddlywiki">
+<pre>TikzDraw
+
+EduINAF
+
+CitationsTools
+
+BookTemplate
+
+WidgetForCoAuthors</pre>
+</div>
+<div created="20200728124602616" creator="ulaulaman" modified="20200731225859501" modifier="ulaulaman" tags="about" title="ulaulaman">
+<pre>''Gianluigi Filippelli'', wikipediano, divulgatore e blogger scientifico.
 
 [[twitter|https://twitter.com/ulaulaman]] | [[instagram|https://www.instagram.com/ulaulaman]]
 
