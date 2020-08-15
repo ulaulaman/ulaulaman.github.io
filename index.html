@@ -225,6 +225,8 @@ Error message and password prompt
 
 <li>CitationsTools</li>
 
+<li>code</li>
+
 <li>EduINAF</li>
 
 <li>EduINAFAjaxFilter</li>
@@ -233,11 +235,23 @@ Error message and password prompt
 
 <li>github</li>
 
+<li>How to show macros code</li>
+
+<li>Macros</li>
+
 <li>Menu</li>
+
+<li>svgStylesheet</li>
 
 <li>Table-of-Contents Macros</li>
 
 <li>TikzDraw</li>
+
+<li>twitter.svg</li>
+
+<li>twitterFollowButton</li>
+
+<li>twitterFollowButtonExample</li>
 
 <li>ulaulaman</li>
 
@@ -9645,7 +9659,7 @@ Error message and password prompt
 <div status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
 
-# [[favicon.ico]]</pre>
+# [[code]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -10092,7 +10106,7 @@ Error message and password prompt
 <div created="20200728124256197" creator="u" modified="20200728124300028" modifier="ulaulama" title="$:/status/UserName">
 <pre>ulaulaman</pre>
 </div>
-<div created="20200815102143735" creator="ulaulaman" list="$:/Import $:/favicon.ico ulaulaman" modified="20200815102143735" modifier="ulaulaman" title="$:/StoryList">
+<div created="20200815102143735" creator="ulaulaman" list="code svgStylesheet twitter.svg [[How to show macros code]] twitterFollowButtonExample twitterFollowButton Macros Menu ulaulaman" modified="20200815143321876" modifier="ulaulaman" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10153,7 +10167,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200728100359161" creator="ulaulaman" modified="20200812144640967" modifier="ulaulaman" title="$:/temp/NewTagName">
+<div created="20200728100359161" creator="ulaulaman" modified="20200815142945996" modifier="ulaulaman" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20180826061648522" modifier="jd" title="$:/theme">
@@ -10389,6 +10403,9 @@ Error message and password prompt
 <div created="20200812150724377" creator="ulaulaman" modified="20200812150724377" modifier="ulaulaman" tags="github" title="CitationsTools">
 <pre></pre>
 </div>
+<div created="20131223104948433" creator="Stephan Hradek" description="Will display a tiddler's code." modified="20200815141208429" modifier="ulaulaman" tags="template" title="code">
+<pre>&lt;pre&gt;&lt;$view field=&quot;text&quot;/&gt;&lt;/pre&gt;</pre>
+</div>
 <div created="20200728191228347" creator="ulaulaman" modified="20200812144517023" modifier="ulaulaman" tags="[[plugin wordpress]] Menu github" title="EduINAF" type="text/x-markdown">
 <pre>Plugin wordpress che aggiunge varie funzionalità al sito [Edu INAF](https://edu.inaf.it/) senza modificare direttamente il codice php del tema. [Codice sorgente su github](https://github.com/ulaulaman/eduinaf).
 
@@ -10486,8 +10503,54 @@ See the [[control panel|$:/ControlPanel]] for more options.
 <div created="20200812142853703" creator="ulaulaman" modified="20200812151146020" modifier="ulaulaman" tags="menu" title="github" type="text/vnd.tiddlywiki">
 <pre>&lt;table&gt;&lt;tr&gt;&lt;$list filter=&quot;[tag[github]sort[title]]&quot;&gt;&lt;td style=&quot;background-color:lightblue; border-style: solid; border-width: 1px;border-color:green;&quot;&gt; &lt;&lt;currentTiddler&gt;&gt; &lt;/td&gt;&lt;/$list&gt;&lt;/tr&gt;&lt;/table&gt;</pre>
 </div>
-<div caption="Menu" created="20200728100348001" creator="ulaulaman" list-before="$:/core/ui/SideBar/Open" modified="20200812150521986" modifier="ulaulaman" tags="$:/tags/SideBar" title="Menu" type="text/x-markdown">
+<div created="20200815123417078" creator="ulaulaman" modified="20200815143733819" modifier="ulaulaman" tags="[[how to]]" title="How to show macros code">
+<pre>I imported in my TiddlyWiki the [[code tiddler|http://tw5magick.tiddlyspot.com/#code]] by [[Stephan Hradek|http://tw5magick.tiddlyspot.com/]] in order to show code of macros and other tiddlers.
+
+For example the show twitterFollowButton's code use `{{twitterFollowButton||code}}`:
+
+{{twitterFollowButton||code}}</pre>
+</div>
+<div created="20200815141511591" creator="ulaulaman" modified="20200815143314652" modifier="ulaulaman" tags="[[how to]] Macros" title="Macros">
+<pre>I try to use original Macros' system, whitout any results. After a brief research, I find [[TW5 Magick|http://tw5magick.tiddlyspot.com/]], a collections of various tricks. Here i find a useful and [[very simple way to define macros|http://tw5magick.tiddlyspot.com/#A%20global%20Macro%20-%20with%20limitations]].
+
+Following the //how to//, I define the twitterFollowButton, using the [[twitter icon in svg|twitter.svg]]
+
+{{twitterFollowButton||code}}
+
+To call this macro I use the code `{{twitterFollowButton|username}}`.
+
+It is also possible define a macro whitout any parameter, like the [[stylesheet for svg|svgStylesheet]]
+
+{{svgStylesheet||code}}
+
+In this case I simple call the macro using the code
+
+`&lt;style&gt;{{svgStylesheet}}&lt;/style&gt;`
+
+as first row in [[twitter.svg]].
+</pre>
+</div>
+<div caption="Menu" created="20200728100348001" creator="ulaulaman" list-before="$:/core/ui/SideBar/Open" modified="20200815120931060" modifier="ulaulaman" tags="$:/tags/SideBar" title="Menu" type="text/x-markdown">
 <pre>{{{ [tag[Menu]] }}}</pre>
+</div>
+<div created="20200815135325021" creator="ulaulaman" modified="20200815141151923" modifier="ulaulaman" tags="Macros template" title="svgStylesheet" type="text/vnd.tiddlywiki">
+<pre>&lt;style&gt;.svg-icon {
+  width: $dim$;
+  height: $dim$;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}&lt;/style&gt;
+
+&lt;$macrocall $name=&quot;svgStylesheet&quot; dim={{!!title}}/&gt;</pre>
 </div>
 <div created="20140919155729620" modified="20150221224034000" tags="Macros [[Core Macros]]" title="Table-of-Contents Macros" type="text/vnd.tiddlywiki">
 <pre>~TiddlyWiki provides several macros for generating a tree of tiddler links by analysing [[tags|Tagging]]:
@@ -10553,6 +10616,23 @@ These two parameters are combined into a single [[filter expression|Filter Expre
 <pre>Un //repository// di grafiche e infografiche realizzate con il pacchetto tikzdraw di LaTeX.
 
 [[Vai alla homepage|https://ulaulaman.github.io/tikzdraw/]]</pre>
+</div>
+<div created="20200815134926535" creator="ulaulaman" modified="20200815142951459" modifier="ulaulaman" tags="svg" title="twitter.svg" type="text/vnd.tiddlywiki">
+<pre>&lt;style&gt;{{svgStylesheet}}&lt;/style&gt;
+
+&lt;svg class=&quot;svg-icon&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+							&lt;path fill=&quot;none&quot; d=&quot;M14.467,6.707c-0.34,0.198-0.715,0.342-1.115,0.419c-0.318-0.335-0.775-0.545-1.279-0.545c-0.969,0-1.754,0.773-1.754,1.727c0,0.135,0.015,0.267,0.045,0.394C8.905,8.628,7.612,7.94,6.747,6.896C6.596,7.151,6.509,7.448,6.509,7.764c0,0.599,0.31,1.128,0.78,1.438C7.002,9.192,6.732,9.115,6.495,8.985c0,0.007,0,0.014,0,0.021c0,0.837,0.605,1.535,1.408,1.694c-0.147,0.04-0.302,0.06-0.462,0.06c-0.113,0-0.223-0.011-0.33-0.031c0.223,0.687,0.871,1.186,1.638,1.199c-0.6,0.464-1.356,0.739-2.179,0.739c-0.142,0-0.281-0.007-0.418-0.023c0.777,0.489,1.699,0.775,2.689,0.775c3.228,0,4.991-2.63,4.991-4.913c0-0.075-0.002-0.149-0.004-0.223c0.342-0.244,0.639-0.547,0.875-0.894c-0.316,0.137-0.652,0.23-1.008,0.272C14.057,7.448,14.336,7.11,14.467,6.707 M10,0.594c-5.195,0-9.406,4.211-9.406,9.406c0,5.195,4.211,9.406,9.406,9.406c5.196,0,9.407-4.211,9.407-9.406C19.406,4.805,15.195,0.594,10,0.594 M10,18.552c-4.723,0-8.551-3.829-8.551-8.552S5.277,1.449,10,1.449c4.723,0,8.551,3.829,8.551,8.551S14.723,18.552,10,18.552&quot;&gt;&lt;/path&gt;
+						&lt;/svg&gt;</pre>
+</div>
+<div created="20200815121123949" creator="ulaulaman" modified="20200815140420061" modifier="ulaulaman" tags="Macros" title="twitterFollowButton">
+<pre>\define twitterFollowButton(username)
+&lt;a href=&quot;https://twitter.com/$username$&quot;&gt;{{twitter.svg}}&lt;/a&gt;
+\end
+
+&lt;$macrocall $name=&quot;twitterFollowButton&quot; username={{!!title}}/&gt;</pre>
+</div>
+<div created="20200815123143434" creator="ulaulaman" modified="20200815141113383" modifier="ulaulaman" tags="" title="twitterFollowButtonExample">
+<pre>&lt;tr&gt;&lt;td width=&quot;50%;&quot;&gt;{{ulaulaman||twitterFollowButton}}&lt;/td&gt;&lt;td width=&quot;50%;&quot;&gt;{{edu_inaf||twitterFollowButton}}&lt;/td&gt;&lt;/tr&gt;</pre>
 </div>
 <div created="20200728124602616" creator="ulaulaman" modified="20200812144452248" modifier="ulaulaman" tags="about" title="ulaulaman">
 <pre>''Gianluigi Filippelli'', wikipediano, divulgatore e blogger scientifico.
