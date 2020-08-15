@@ -157,6 +157,10 @@ Error message and password prompt
 
 <li>$:/core</li>
 
+<li>$:/custom-svg-style</li>
+
+<li>$:/custom-tag-styles</li>
+
 <li>$:/DefaultTiddlers</li>
 
 <li>$:/favicon.ico</li>
@@ -290,17 +294,17 @@ Error message and password prompt
 <div created="20200728124027100" modified="20200728124027100" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
 </div>
-<div created="20200815145448342" creator="ulaulaman" modified="20200815145524895" modifier="ulaulaman" title="$:/config/SideBar/Visibility/$:/core/ui/SideBar/More">
+<div created="20200815145448342" creator="ulaulaman" modified="20200815172634204" modifier="ulaulaman" title="$:/config/SideBar/Visibility/$:/core/ui/SideBar/More">
 <pre>hide</pre>
 </div>
 <div created="20200815145323767" creator="ulaulaman" modified="20200815145442943" modifier="ulaulaman" title="$:/config/SideBar/Visibility/$:/core/ui/SideBar/Open">
 <pre>hide</pre>
 </div>
-<div created="20200815145444032" creator="ulaulaman" modified="20200815145444032" modifier="ulaulaman" title="$:/config/SideBar/Visibility/$:/core/ui/SideBar/Recent">
+<div created="20200815145444032" creator="ulaulaman" modified="20200815172636493" modifier="ulaulaman" title="$:/config/SideBar/Visibility/$:/core/ui/SideBar/Recent">
 <pre>hide</pre>
 </div>
-<div created="20200815145446088" creator="ulaulaman" modified="20200815145525736" modifier="ulaulaman" title="$:/config/SideBar/Visibility/$:/core/ui/SideBar/Tools">
-<pre>show</pre>
+<div created="20200815145446088" creator="ulaulaman" modified="20200815163823669" modifier="ulaulaman" title="$:/config/SideBar/Visibility/$:/core/ui/SideBar/Tools">
+<pre>hide</pre>
 </div>
 <div created="20200815145319810" creator="ulaulaman" modified="20200815145609325" modifier="ulaulaman" title="$:/config/SideBar/Visibility/Menu">
 <pre>show</pre>
@@ -9681,6 +9685,44 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div created="20200815170308495" creator="ulaulaman" modified="20200815172437025" modifier="ulaulaman" tags="template $:/tags/Stylesheet data-tags-styles" title="$:/custom-svg-style" type="text/vnd.tiddlywiki">
+<pre>[data-tags*=&quot;svg&quot;] .svg-icon {
+  width: 100%;
+  height: 100%;
+}
+
+[data-tags*=&quot;svg&quot;] .svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+[data-tags*=&quot;svg&quot;] .svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+[data-tags*=&quot;data-tags-styles&quot;] .tc-tiddler-body {
+  display: block;
+  padding: 14px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  word-break: normal;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  background-color: #f5f5f5;
+  border: 1px solid #cccccc;
+  padding: 0 3px 2px;
+  border-radius: 3px;
+  font-family: Monaco, Consolas, &quot;Lucida Console&quot;, &quot;DejaVu Sans Mono&quot;, monospace;
+}</pre>
+</div>
+<div created="20200815171528811" creator="ulaulaman" modified="20200815172459198" modifier="ulaulaman" tags="template $:/tags/Stylesheet data-tags-styles" title="$:/custom-tag-styles" type="text/vnd.tiddlywiki">
+<pre>[data-tags*=&quot;Macros&quot;] {
+  border: 1px solid red;
+}
+</pre>
+</div>
 <div created="20200728100500119" creator="ulaulaman" modified="20200731225746817" modifier="ulaulaman" title="$:/DefaultTiddlers">
 <pre>ulaulaman</pre>
 </div>
@@ -10119,7 +10161,7 @@ Error message and password prompt
 <div created="20200815145603359" creator="ulaulaman" modified="20200815145702136" modifier="ulaulaman" title="$:/state/tab/moresidebar-2063431451">
 <pre>TikzDraw</pre>
 </div>
-<div created="20200728185745371" creator="ulaulaman" modified="20200815145450750" modifier="ulaulaman" title="$:/state/tab/moresidebar-358244441">
+<div created="20200728185745371" creator="ulaulaman" modified="20200815172630140" modifier="ulaulaman" title="$:/state/tab/moresidebar-358244441">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
 <div created="20200728100902299" creator="ulaulaman" modified="20200728124327173" modifier="ulaulaman" title="$:/state/tab/sidebar--595412856">
@@ -10140,7 +10182,7 @@ Error message and password prompt
 <div created="20200728124256197" creator="u" modified="20200728124300028" modifier="ulaulama" title="$:/status/UserName">
 <pre>ulaulaman</pre>
 </div>
-<div created="20200815144126056" creator="ulaulaman" list="ulaulaman" modified="20200815145610555" modifier="ulaulaman" title="$:/StoryList">
+<div created="20200815170220746" creator="ulaulaman" list="$:/custom-tag-styles $:/custom-svg-style twitterFollowButton Macros twitter.svg svgStylesheet ulaulaman" modified="20200815170857662" modifier="ulaulaman" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200815144105695" creator="ulaulaman" modified="20200815144845173" modifier="ulaulaman" tags="Macros" title="$:/TagTable">
@@ -10208,7 +10250,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200728100359161" creator="ulaulaman" modified="20200815142945996" modifier="ulaulaman" title="$:/temp/NewTagName">
+<div created="20200728100359161" creator="ulaulaman" modified="20200815171346394" modifier="ulaulaman" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20180826061648522" modifier="jd" title="$:/theme">
@@ -10551,7 +10593,7 @@ For example the show twitterFollowButton's code use `{{twitterFollowButton||code
 
 {{twitterFollowButton||code}}</pre>
 </div>
-<div created="20200815141511591" creator="ulaulaman" modified="20200815143314652" modifier="ulaulaman" tags="[[how to]] Macros" title="Macros">
+<div created="20200815141511591" creator="ulaulaman" modified="20200815171212803" modifier="ulaulaman" tags="[[how to]] Macros" title="Macros">
 <pre>I try to use original Macros' system, whitout any results. After a brief research, I find [[TW5 Magick|http://tw5magick.tiddlyspot.com/]], a collections of various tricks. Here i find a useful and [[very simple way to define macros|http://tw5magick.tiddlyspot.com/#A%20global%20Macro%20-%20with%20limitations]].
 
 Following the //how to//, I define the twitterFollowButton, using the [[twitter icon in svg|twitter.svg]]
@@ -10560,7 +10602,7 @@ Following the //how to//, I define the twitterFollowButton, using the [[twitter 
 
 To call this macro I use the code `{{twitterFollowButton|username}}`.
 
-It is also possible define a macro whitout any parameter, like the [[stylesheet for svg|svgStylesheet]]
+It is also possible define a macro whitout any parameter, like the [[stylesheet for svg|svgStylesheet]] (read also the [[standard way|https://tiddlywiki.com/#Custom%20styles%20by%20data-tags]] to include stylesheet in TiddlyWiki)
 
 {{svgStylesheet||code}}
 
@@ -10661,10 +10703,8 @@ These two parameters are combined into a single [[filter expression|Filter Expre
 
 [[Vai alla homepage|https://ulaulaman.github.io/tikzdraw/]]</pre>
 </div>
-<div created="20200815134926535" creator="ulaulaman" modified="20200815142951459" modifier="ulaulaman" tags="svg" title="twitter.svg" type="text/vnd.tiddlywiki">
-<pre>&lt;style&gt;{{svgStylesheet}}&lt;/style&gt;
-
-&lt;svg class=&quot;svg-icon&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+<div created="20200815134926535" creator="ulaulaman" modified="20200815170853450" modifier="ulaulaman" tags="svg" title="twitter.svg" type="text/vnd.tiddlywiki">
+<pre>&lt;svg class=&quot;svg-icon&quot; viewBox=&quot;0 0 20 20&quot;&gt;
 							&lt;path fill=&quot;none&quot; d=&quot;M14.467,6.707c-0.34,0.198-0.715,0.342-1.115,0.419c-0.318-0.335-0.775-0.545-1.279-0.545c-0.969,0-1.754,0.773-1.754,1.727c0,0.135,0.015,0.267,0.045,0.394C8.905,8.628,7.612,7.94,6.747,6.896C6.596,7.151,6.509,7.448,6.509,7.764c0,0.599,0.31,1.128,0.78,1.438C7.002,9.192,6.732,9.115,6.495,8.985c0,0.007,0,0.014,0,0.021c0,0.837,0.605,1.535,1.408,1.694c-0.147,0.04-0.302,0.06-0.462,0.06c-0.113,0-0.223-0.011-0.33-0.031c0.223,0.687,0.871,1.186,1.638,1.199c-0.6,0.464-1.356,0.739-2.179,0.739c-0.142,0-0.281-0.007-0.418-0.023c0.777,0.489,1.699,0.775,2.689,0.775c3.228,0,4.991-2.63,4.991-4.913c0-0.075-0.002-0.149-0.004-0.223c0.342-0.244,0.639-0.547,0.875-0.894c-0.316,0.137-0.652,0.23-1.008,0.272C14.057,7.448,14.336,7.11,14.467,6.707 M10,0.594c-5.195,0-9.406,4.211-9.406,9.406c0,5.195,4.211,9.406,9.406,9.406c5.196,0,9.407-4.211,9.407-9.406C19.406,4.805,15.195,0.594,10,0.594 M10,18.552c-4.723,0-8.551-3.829-8.551-8.552S5.277,1.449,10,1.449c4.723,0,8.551,3.829,8.551,8.551S14.723,18.552,10,18.552&quot;&gt;&lt;/path&gt;
 						&lt;/svg&gt;</pre>
 </div>
@@ -10675,7 +10715,7 @@ These two parameters are combined into a single [[filter expression|Filter Expre
 
 &lt;$macrocall $name=&quot;twitterFollowButton&quot; username={{!!title}}/&gt;</pre>
 </div>
-<div created="20200815123143434" creator="ulaulaman" modified="20200815141113383" modifier="ulaulaman" tags="" title="twitterFollowButtonExample">
+<div created="20200815123143434" creator="ulaulaman" modified="20200815171002483" modifier="ulaulaman" tags="example" title="twitterFollowButtonExample">
 <pre>&lt;tr&gt;&lt;td width=&quot;50%;&quot;&gt;{{ulaulaman||twitterFollowButton}}&lt;/td&gt;&lt;td width=&quot;50%;&quot;&gt;{{edu_inaf||twitterFollowButton}}&lt;/td&gt;&lt;/tr&gt;</pre>
 </div>
 <div created="20200728124602616" creator="ulaulaman" modified="20200815144909949" modifier="ulaulaman" tags="about" title="ulaulaman">
