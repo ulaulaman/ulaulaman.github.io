@@ -143,6 +143,16 @@ Error message and password prompt
 
 <li>$:/config/RelinkOnRename</li>
 
+<li>$:/config/SideBar/Visibility/$:/core/ui/SideBar/More</li>
+
+<li>$:/config/SideBar/Visibility/$:/core/ui/SideBar/Open</li>
+
+<li>$:/config/SideBar/Visibility/$:/core/ui/SideBar/Recent</li>
+
+<li>$:/config/SideBar/Visibility/$:/core/ui/SideBar/Tools</li>
+
+<li>$:/config/SideBar/Visibility/Menu</li>
+
 <li>$:/config/Whitespace/sidebar</li>
 
 <li>$:/core</li>
@@ -189,6 +199,8 @@ Error message and password prompt
 
 <li>$:/state/tab/moresidebar-1850697562</li>
 
+<li>$:/state/tab/moresidebar-2063431451</li>
+
 <li>$:/state/tab/moresidebar-358244441</li>
 
 <li>$:/state/tab/sidebar--595412856</li>
@@ -204,6 +216,8 @@ Error message and password prompt
 <li>$:/status/UserName</li>
 
 <li>$:/StoryList</li>
+
+<li>$:/TagTable</li>
 
 <li>$:/temp/info-plugin</li>
 
@@ -241,6 +255,8 @@ Error message and password prompt
 
 <li>Menu</li>
 
+<li>svg</li>
+
 <li>svgStylesheet</li>
 
 <li>Table-of-Contents Macros</li>
@@ -273,6 +289,21 @@ Error message and password prompt
 <div id="storeArea" style="display:none;">
 <div created="20200728124027100" modified="20200728124027100" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
+</div>
+<div created="20200815145448342" creator="ulaulaman" modified="20200815145524895" modifier="ulaulaman" title="$:/config/SideBar/Visibility/$:/core/ui/SideBar/More">
+<pre>hide</pre>
+</div>
+<div created="20200815145323767" creator="ulaulaman" modified="20200815145442943" modifier="ulaulaman" title="$:/config/SideBar/Visibility/$:/core/ui/SideBar/Open">
+<pre>hide</pre>
+</div>
+<div created="20200815145444032" creator="ulaulaman" modified="20200815145444032" modifier="ulaulaman" title="$:/config/SideBar/Visibility/$:/core/ui/SideBar/Recent">
+<pre>hide</pre>
+</div>
+<div created="20200815145446088" creator="ulaulaman" modified="20200815145525736" modifier="ulaulaman" title="$:/config/SideBar/Visibility/$:/core/ui/SideBar/Tools">
+<pre>show</pre>
+</div>
+<div created="20200815145319810" creator="ulaulaman" modified="20200815145609325" modifier="ulaulaman" title="$:/config/SideBar/Visibility/Menu">
+<pre>show</pre>
 </div>
 <div created="20200728190149332" creator="ulaulaman" modified="20200728190152217" modifier="ulaulaman" title="$:/config/Whitespace/sidebar">
 <pre>left</pre>
@@ -10085,8 +10116,11 @@ Error message and password prompt
 <div created="20200728101438595" modified="20200728101438595" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Plugins</pre>
 </div>
-<div created="20200728185745371" creator="ulaulaman" modified="20200812092956836" modifier="ulaulaman" title="$:/state/tab/moresidebar-358244441">
-<pre>$:/core/ui/MoreSideBar/Tags</pre>
+<div created="20200815145603359" creator="ulaulaman" modified="20200815145702136" modifier="ulaulaman" title="$:/state/tab/moresidebar-2063431451">
+<pre>TikzDraw</pre>
+</div>
+<div created="20200728185745371" creator="ulaulaman" modified="20200815145450750" modifier="ulaulaman" title="$:/state/tab/moresidebar-358244441">
+<pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
 <div created="20200728100902299" creator="ulaulaman" modified="20200728124327173" modifier="ulaulaman" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
@@ -10106,8 +10140,15 @@ Error message and password prompt
 <div created="20200728124256197" creator="u" modified="20200728124300028" modifier="ulaulama" title="$:/status/UserName">
 <pre>ulaulaman</pre>
 </div>
-<div created="20200815102143735" creator="ulaulaman" list="code svgStylesheet twitter.svg [[How to show macros code]] twitterFollowButtonExample twitterFollowButton Macros Menu ulaulaman" modified="20200815143321876" modifier="ulaulaman" title="$:/StoryList">
+<div created="20200815144126056" creator="ulaulaman" list="ulaulaman" modified="20200815145610555" modifier="ulaulaman" title="$:/StoryList">
 <pre></pre>
+</div>
+<div created="20200815144105695" creator="ulaulaman" modified="20200815144845173" modifier="ulaulaman" tags="Macros" title="$:/TagTable">
+<pre>\define TagTable(tag)
+&lt;table&gt;&lt;tr&gt;&lt;$list filter=&quot;[tag[$tag$]sort[title]]&quot;&gt;&lt;td style=&quot;background-color:lightblue; border-style: solid; border-width: 1px;border-color:green;&quot;&gt; &lt;&lt;currentTiddler&gt;&gt; &lt;/td&gt;&lt;/$list&gt;&lt;/tr&gt;&lt;/table&gt;
+\end
+
+&lt;$macrocall $name=&quot;TagTable&quot; tag={{!!title}}/&gt;</pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
 <pre>{
@@ -10533,6 +10574,9 @@ as first row in [[twitter.svg]].
 <div caption="Menu" created="20200728100348001" creator="ulaulaman" list-before="$:/core/ui/SideBar/Open" modified="20200815120931060" modifier="ulaulaman" tags="$:/tags/SideBar" title="Menu" type="text/x-markdown">
 <pre>{{{ [tag[Menu]] }}}</pre>
 </div>
+<div created="20200815145229557" creator="ulaulaman" modified="20200815145300982" modifier="ulaulaman" tags="[[how to]] svg" title="svg">
+<pre>[[Source for svg icons|http://svgicons.sparkk.fr/]]</pre>
+</div>
 <div created="20200815135325021" creator="ulaulaman" modified="20200815141151923" modifier="ulaulaman" tags="Macros template" title="svgStylesheet" type="text/vnd.tiddlywiki">
 <pre>&lt;style&gt;.svg-icon {
   width: $dim$;
@@ -10634,7 +10678,7 @@ These two parameters are combined into a single [[filter expression|Filter Expre
 <div created="20200815123143434" creator="ulaulaman" modified="20200815141113383" modifier="ulaulaman" tags="" title="twitterFollowButtonExample">
 <pre>&lt;tr&gt;&lt;td width=&quot;50%;&quot;&gt;{{ulaulaman||twitterFollowButton}}&lt;/td&gt;&lt;td width=&quot;50%;&quot;&gt;{{edu_inaf||twitterFollowButton}}&lt;/td&gt;&lt;/tr&gt;</pre>
 </div>
-<div created="20200728124602616" creator="ulaulaman" modified="20200812144452248" modifier="ulaulaman" tags="about" title="ulaulaman">
+<div created="20200728124602616" creator="ulaulaman" modified="20200815144909949" modifier="ulaulaman" tags="about" title="ulaulaman">
 <pre>''Gianluigi Filippelli'', wikipediano, divulgatore e blogger scientifico.
 
 !! Lavoro
@@ -10651,7 +10695,7 @@ In inglese: [[Doc Madhattan|http://docmadhattan.fieldofscience.com/]] | [[for Ma
 
 !! Repository e progetti su github
 
-{{github}}
+{{github||$:/TagTable}}
 
 !! Social
 
