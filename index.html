@@ -159,6 +159,8 @@ Error message and password prompt
 
 <li>$:/core/macros/ulaulaman/TagTable</li>
 
+<li>$:/core/Stylesheet/blue-table</li>
+
 <li>$:/custom-svg-style</li>
 
 <li>$:/custom-tag-styles</li>
@@ -9689,12 +9691,84 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200816130933001" creator="ulaulaman" modified="20200816131448184" modifier="ulaulaman" tags="Macros" title="$:/core/macros/ulaulaman/TagTable">
+<div created="20200816130933001" creator="ulaulaman" modified="20200816150238870" modifier="ulaulaman" tags="Macros" title="$:/core/macros/ulaulaman/TagTable">
 <pre>\define TagTable(tag)
-&lt;table&gt;&lt;tr&gt;&lt;$list filter=&quot;[tag[$tag$]sort[title]]&quot;&gt;&lt;td style=&quot;background-color:lightblue; border-style: solid; border-width: 1px;border-color:green;&quot;&gt; &lt;&lt;currentTiddler&gt;&gt; &lt;/td&gt;&lt;/$list&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;div class=&quot;divTable blueTable&quot;&gt;&lt;div class=&quot;divTableHeading&quot;&gt;&lt;div class=&quot;divTableRow&quot;&gt;&lt;$list filter=&quot;[tag[$tag$]sort[title]]&quot;&gt;&lt;div class=&quot;divTableHead&quot;&gt; &lt;&lt;currentTiddler&gt;&gt; &lt;/div&gt;&lt;/$list&gt;&lt;div class=&quot;divTableRow&quot;&gt;&lt;/div&gt;&lt;/div&gt;
 \end
 
 &lt;$macrocall $name=&quot;TagTable&quot; tag={{!!title}}/&gt;</pre>
+</div>
+<div created="20200816145229864" creator="ulaulaman" modified="20200816150449932" modifier="ulaulaman" tags="$:/tags/Stylesheet template" title="$:/core/Stylesheet/blue-table" type="text/css">
+<pre>div.blueTable {
+  border: 1px solid #1C6EA4;
+  background-color: #EEEEEE;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+.divTable.blueTable .divTableCell, .divTable.blueTable .divTableHead {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+.divTable.blueTable .divTableBody .divTableCell {
+  font-size: 13px;
+}
+.divTable.blueTable .divTableRow:nth-child(even) {
+  background: #D0E4F5;
+}
+.divTable.blueTable .divTableHeading {
+  background: #1C6EA4;
+  background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  border-bottom: 2px solid #444444;
+}
+.divTable.blueTable .divTableHeading .divTableHead {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border-left: 2px solid #D0E4F5;
+}
+.divTable.blueTable .divTableHeading .divTableHead:first-child {
+  border-left: none;
+}
+
+.blueTable .tableFootStyle {
+  font-size: 14px;
+}
+.blueTable .tableFootStyle .links {
+	 text-align: right;
+}
+.blueTable .tableFootStyle .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+.blueTable.outerTableFooter {
+  border-top: none;
+}
+.blueTable.outerTableFooter .tableFootStyle {
+  padding: 3px 5px; 
+}
+
+div.blueTable a:link {
+color: white;
+}
+
+div.blueTable a:visited {
+color: white;
+}
+
+/* DivTable.com */
+.divTable{ display: table; }
+.divTableRow { display: table-row; }
+.divTableHeading { display: table-header-group;}
+.divTableCell, .divTableHead { display: table-cell;}
+.divTableHeading { display: table-header-group;}
+.divTableFoot { display: table-footer-group;}
+.divTableBody { display: table-row-group;}</pre>
 </div>
 <div created="20200815170308495" creator="ulaulaman" modified="20200815172437025" modifier="ulaulaman" tags="template $:/tags/Stylesheet data-tags-styles" title="$:/custom-svg-style" type="text/vnd.tiddlywiki">
 <pre>[data-tags*=&quot;svg&quot;] .svg-icon {
@@ -9728,8 +9802,12 @@ Error message and password prompt
   font-family: Monaco, Consolas, &quot;Lucida Console&quot;, &quot;DejaVu Sans Mono&quot;, monospace;
 }</pre>
 </div>
-<div created="20200815171528811" creator="ulaulaman" modified="20200816133329208" modifier="ulaulaman" tags="template $:/tags/Stylesheet data-tags-styles" title="$:/custom-tag-styles" type="text/vnd.tiddlywiki">
-<pre>[data-tags*=&quot;Macros&quot;] {
+<div created="20200815171528811" creator="ulaulaman" modified="20200816151049213" modifier="ulaulaman" tags="template $:/tags/Stylesheet data-tags-styles" title="$:/custom-tag-styles" type="text/vnd.tiddlywiki">
+<pre>[data-tags*=&quot;$:/tags/Stylesheet&quot;] {
+ border: 1px solid blue;
+}
+
+[data-tags*=&quot;Macros&quot;] {
   border: 1px solid red;
 }
 
@@ -10238,7 +10316,7 @@ exports.run = function(tag) {
 <div created="20200728124256197" creator="u" modified="20200728124300028" modifier="ulaulama" title="$:/status/UserName">
 <pre>ulaulaman</pre>
 </div>
-<div created="20200816133628346" creator="ulaulaman" list="TagTable $:/core/macros/ulaulaman/TagTable $:/macros/ulaulaman/TagTable.js ulaulaman" modified="20200816133844358" modifier="ulaulaman" title="$:/StoryList">
+<div created="20200816150924936" creator="ulaulaman" list="ulaulaman" modified="20200816150956031" modifier="ulaulaman" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10747,8 +10825,8 @@ These two parameters are combined into a single [[filter expression|Filter Expre
 [[Examples|Table-of-Contents Macros (Examples)]]
 </pre>
 </div>
-<div created="20200816122927690" creator="ulaulaman" modified="20200816133930078" modifier="ulaulaman" tags="Macros" title="TagTable">
-<pre>Following the tricks pubblished by [[Stephan Hradek on TW5 Magick|http://tw5magick.tiddlyspot.com/]] I create a macro that shows tiddlers from a specific tag in a styled table: $:/core/macros/ulaulaman/TagTable
+<div created="20200816122927690" creator="ulaulaman" modified="20200816150620941" modifier="ulaulaman" tags="Macros" title="TagTable">
+<pre>Following the tricks pubblished by [[Stephan Hradek on TW5 Magick|http://tw5magick.tiddlyspot.com/]] I create a macro that shows tiddlers from a specific tag in a styled table.
 
 Whit the previous title, the syntax must be a bit difficult (`{{menu||$:/core/macros/ulaulaman/TagTable}}`), so I create a javascript in order to simplify the syntax in this way: `&lt;&lt;TagTable &quot;Menu&quot;&gt;&gt;`:
 
@@ -10757,7 +10835,11 @@ Whit the previous title, the syntax must be a bit difficult (`{{menu||$:/core/ma
 In you want use the macro, drag the following link in your TiddlyWiki, and don't forget to save and refresh:
 
 * $:/core/macros/ulaulaman/TagTable
-* $:/macros/ulaulaman/TagTable.js</pre>
+* $:/macros/ulaulaman/TagTable.js
+
+The stylesheet is here:
+
+* $:/core/Stylesheet/blue-table</pre>
 </div>
 <div created="20200803183532401" creator="ulaulaman" modified="20200812150428278" modifier="ulaulaman" tags="latex Menu github" title="TikzDraw">
 <pre>Un //repository// di grafiche e infografiche realizzate con il pacchetto tikzdraw di LaTeX.
@@ -10779,7 +10861,7 @@ In you want use the macro, drag the following link in your TiddlyWiki, and don't
 <div created="20200815123143434" creator="ulaulaman" modified="20200815171002483" modifier="ulaulaman" tags="example" title="twitterFollowButtonExample">
 <pre>&lt;tr&gt;&lt;td width=&quot;50%;&quot;&gt;{{ulaulaman||twitterFollowButton}}&lt;/td&gt;&lt;td width=&quot;50%;&quot;&gt;{{edu_inaf||twitterFollowButton}}&lt;/td&gt;&lt;/tr&gt;</pre>
 </div>
-<div created="20200728124602616" creator="ulaulaman" modified="20200816133141815" modifier="ulaulaman" tags="about" title="ulaulaman">
+<div created="20200728124602616" creator="ulaulaman" modified="20200816150505535" modifier="ulaulaman" tags="about" title="ulaulaman">
 <pre>''Gianluigi Filippelli'', wikipediano, divulgatore e blogger scientifico.
 
 !! Lavoro
