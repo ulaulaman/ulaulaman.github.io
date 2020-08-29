@@ -11362,7 +11362,7 @@ exports.run = function(tag) {
 <div created="20200728124256197" creator="u" modified="20200728124300028" modifier="ulaulama" title="$:/status/UserName">
 <pre>ulaulaman</pre>
 </div>
-<div created="20200829172216331" creator="ulaulaman" list="[[Gianluigi Filippelli]] CoAuthorsWidget" modified="20200829173446610" modifier="ulaulaman" title="$:/StoryList">
+<div created="20200829172216331" creator="ulaulaman" list="[[Gianluigi Filippelli]] CitationsTools" modified="20200829183119170" modifier="ulaulaman" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -11940,10 +11940,86 @@ In inglese: [[Doc Madhattan|http://docmadhattan.fieldofscience.com/]] | [[for Ma
 <div created="20200812150738415" creator="ulaulaman" modified="20200812150738415" modifier="ulaulaman" tags="github" title="BookTemplate">
 <pre></pre>
 </div>
-<div created="20200812150724377" creator="ulaulaman" modified="20200812150724377" modifier="ulaulaman" tags="github" title="CitationsTools">
-<pre></pre>
+<div created="20200812150724377" creator="ulaulaman" modified="20200829183544024" modifier="ulaulaman" tags="github [[plugin wordpress]] Wordpress" title="CitationsTools" type="text/x-markdown">
+<pre>&lt;&lt;dbadge &quot;Citations tools&quot; &quot;0.3.2&quot; &quot;info&quot;&gt;&gt; &lt;a href=&quot;https://wordpress.org/plugins/citations-tools/&quot; class=&quot;badge badge-dark&quot; target=&quot;wp&quot;&gt;Wordpress Plugin&lt;/a&gt; &lt;a href=&quot;https://github.com/ulaulaman/citations-tools&quot; class=&quot;badge badge-dark&quot; target=&quot;github&quot;&gt;Repository ~GitHub&lt;/a&gt; &lt;a href=&quot;https://github.com/ulaulaman/citations-tools-dev&quot; class=&quot;badge badge-dark&quot; target=&quot;github&quot;&gt;Developing version&lt;/a&gt;
+
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://github.com/ulaulaman/citations-tools/blob/master/assets/banner-772x250.jpg?raw=true&quot; /&gt;&lt;/div&gt;
+
+Some tools for scientific and editorial bloggers.
+
+# Description
+The plugin add a shortcode in order to link a paper using its doi code. You can also use an other shortcode to resolve doi code and publish a full citation apa formatted. It is also a shortcode for manual citations.
+
+## Link doi
+
+Using the standard for doi link, the plugin introduce a shortcode in order to create a link to a paper provided by doi.
+**How to use the shortcode**:
+
+[ctdoi code=&quot;...&quot;]Title of the paper[/doi]
+
+## Doi resolver
+
+The plugin send the doi code to [Crossref Metadata Search](https://search.crossref.org/), get the information and publish a full citation in apa standard with the shortcode [ctdoiresolve ...].
+**How to use the shortcode**:
+
+[ctdoiresolve code=&quot;...&quot;]
+
+There are also three optional parameters:
+
+[ctdoiresolve code=&quot;...&quot; arxiv=&quot;...&quot;]
+
+if the paper has an arXiv version
+
+[ctdoiresolve code=&quot;...&quot; pdfurl=&quot;...&quot;]
+
+if the paper has a free pdf version
+
+[ctdoiresolve code=&quot;...&quot; archiveurl=&quot;...&quot;]
+
+if the paper has a free version on [archive.org](https://archive.org/)
+
+## Manual citations
+
+There's also a shortcode for manual citations, [paperdata ...]. You can use it with the following syntax:
+
+[paperdata auth=&quot;author/s name/s&quot; year=&quot;...&quot; title=&quot;...&quot; journal=&quot;...&quot; vol=&quot;...&quot; issue=&quot;...&quot; pages=&quot;...&quot; code=&quot;...&quot;]
+
+You can also use the arxiv, pdfurl, archiveurl parameters.
+
+## Styling
+
+You can style citations adding in your css theme the class &quot;paperdata&quot;.
+
+## External service
+
+**Digital Object Identifier**, or *DOI*, is a persistent identifier used to uniquely identify objects, standardized by the **International Organization for Standardization** (*ISO*). DOIs are mainly used to identify academic, professional, and government information, such as journal articles, research reports and data sets, official publications.
+
+***Citations tools*** uses the [CrossRef Metadata API](http://search.crossref.org/help/api) to retrieve complete publication information using the doi code as a search query. CrossRef is a part of the [doi system](https://dx.doi.org/).
+
+## Screenshot
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://github.com/ulaulaman/citations-tools/blob/master/assets/screenshot-1.jpg?raw=true&quot; /&gt;&lt;br/&gt;
+&lt;em&gt;The doi resolver: the shortcode (up) and the results (down)&lt;/em&gt;&lt;/div&gt;
+
+# Installation
+1.  Extract the citations-tools.zip file and upload its contents to the /wp-content/plugins/ directory. Alternately, you can install directly from the Plugin directory within your WordPress Install.
+2. Activate the plugin through the &quot;Plugins&quot; menu in WordPress.
+3. Use the shortcode into your posts or pages.
+
+# Changelog
+* 0.3.2 add compatibility with Wordpress 4.9.5
+* 0.3.1 fix error in html script in [ctdoi] shortcode
+* 0.3 add shortcode for manual citations
+* 0.2.6.1 update readme.txt
+* 0.2.6 add archive.org link in doi resolver as shortcode's parameter
+* 0.2.5 fix error code
+* 0.2.4 changed functions names
+* 0.2.3 add pdf link in doi resolver as ahortcode's parameter
+* 0.2.2 add arXiv link in doi resolver as shortcode's parameter
+* 0.2.1 add doi link in doi resolver
+* 0.2 add shortcode to resolve doi using code
+* 0.1 shortcode for doi link</pre>
 </div>
-<div created="20200812150749260" creator="ulaulaman" modified="20200829173831307" modifier="ulaulaman" tags="github [[plugin wordpress]] Wordpress" title="CoAuthorsWidget" type="text/x-markdown">
+<div created="20200812150749260" creator="ulaulaman" modified="20200829183131095" modifier="ulaulaman" tags="github [[plugin wordpress]] Wordpress" title="CoAuthorsWidget" type="text/x-markdown">
 <pre>&lt;&lt;dbadge &quot;Co-Authors Widget&quot; &quot;0.5.3&quot; &quot;info&quot;&gt;&gt; &lt;a href=&quot;https://wordpress.org/plugins/widget-for-co-authors/&quot; class=&quot;badge badge-dark&quot; target=&quot;wp&quot;&gt;Wordpress Plugin&lt;/a&gt; &lt;a href=&quot;https://github.com/ulaulaman/widget-for-co-authors&quot; class=&quot;badge badge-dark&quot; target=&quot;github&quot;&gt;Repository ~GitHub&lt;/a&gt;
 
 The plugin add a widget and a shortcode in order to show authors of an article. It is compatible with Co-Authors Plus.
