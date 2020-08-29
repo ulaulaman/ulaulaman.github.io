@@ -197,6 +197,8 @@ Error message and password prompt
 
 <li>$:/state/addplugins/tab-1342078386</li>
 
+<li>$:/state/plugin-info--896887961-$:/plugins/kookma/shiraz</li>
+
 <li>$:/state/sidebar</li>
 
 <li>$:/state/tab--1333369437</li>
@@ -301,6 +303,8 @@ Error message and password prompt
 
 <li>CitationsTools</li>
 
+<li>CoAuthorsWidget</li>
+
 <li>code</li>
 
 <li>EduINAF</li>
@@ -355,7 +359,7 @@ Error message and password prompt
 
 <li>ulaulaman</li>
 
-<li>WidgetForCoAuthors</li>
+<li>WordpressPlugin</li>
 
 </ul>
 </p>
@@ -385,7 +389,7 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
 <div created="20200815145323767" creator="ulaulaman" modified="20200816230244350" modifier="ulaulaman" title="$:/config/SideBar/Visibility/$:/core/ui/SideBar/Open">
 <pre>hide</pre>
 </div>
-<div created="20200815145444032" creator="ulaulaman" modified="20200824121933577" modifier="ulaulaman" title="$:/config/SideBar/Visibility/$:/core/ui/SideBar/Recent">
+<div created="20200815145444032" creator="ulaulaman" modified="20200829173545432" modifier="ulaulaman" title="$:/config/SideBar/Visibility/$:/core/ui/SideBar/Recent">
 <pre>hide</pre>
 </div>
 <div created="20200815145446088" creator="ulaulaman" modified="20200815163823669" modifier="ulaulaman" title="$:/config/SideBar/Visibility/$:/core/ui/SideBar/Tools">
@@ -11274,6 +11278,9 @@ exports.run = function(tag) {
 <div created="20200824104324626" creator="ulaulaman" modified="20200824104324626" modifier="ulaulaman" title="$:/state/addplugins/tab-1342078386">
 <pre>$:/config/KookmaPluginLibrary</pre>
 </div>
+<div created="20200829172909733" creator="ulaulaman" modified="20200829173000329" modifier="ulaulaman" title="$:/state/plugin-info--896887961-$:/plugins/kookma/shiraz">
+<pre>no</pre>
+</div>
 <div created="20200728192623775" creator="ulaulaman" modified="20200728192629654" modifier="ulaulaman" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
@@ -11355,7 +11362,7 @@ exports.run = function(tag) {
 <div created="20200728124256197" creator="u" modified="20200728124300028" modifier="ulaulama" title="$:/status/UserName">
 <pre>ulaulaman</pre>
 </div>
-<div created="20200829170200118" creator="ulaulaman" list="TikzDraw [[Gianluigi Filippelli]]" modified="20200829170915921" modifier="ulaulaman" title="$:/StoryList">
+<div created="20200829172216331" creator="ulaulaman" list="[[Gianluigi Filippelli]] CoAuthorsWidget" modified="20200829173446610" modifier="ulaulaman" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -11416,7 +11423,7 @@ exports.run = function(tag) {
     }
 }</pre>
 </div>
-<div created="20200728100359161" creator="ulaulaman" modified="20200829170457784" modifier="ulaulaman" title="$:/temp/NewTagName">
+<div created="20200728100359161" creator="ulaulaman" modified="20200829173715427" modifier="ulaulaman" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
 <div author="Mohammad Rahmani" core-version="&gt;=5.1.22" created="20200824104326782" creator="ulaulaman" dependents="" description="Tiddler Commander" list="readme history license authors" modified="20200824104326782" modifier="ulaulaman" original-plugin-type="plugin" original-tags="" original-title="$:/plugins/kookma/commander" original-type="application/json" readme="; Tiddler Commander
@@ -11936,10 +11943,41 @@ In inglese: [[Doc Madhattan|http://docmadhattan.fieldofscience.com/]] | [[for Ma
 <div created="20200812150724377" creator="ulaulaman" modified="20200812150724377" modifier="ulaulaman" tags="github" title="CitationsTools">
 <pre></pre>
 </div>
+<div created="20200812150749260" creator="ulaulaman" modified="20200829173831307" modifier="ulaulaman" tags="github [[plugin wordpress]] Wordpress" title="CoAuthorsWidget" type="text/x-markdown">
+<pre>&lt;&lt;dbadge &quot;Co-Authors Widget&quot; &quot;0.5.3&quot; &quot;info&quot;&gt;&gt; &lt;a href=&quot;https://wordpress.org/plugins/widget-for-co-authors/&quot; class=&quot;badge badge-dark&quot; target=&quot;wp&quot;&gt;Wordpress Plugin&lt;/a&gt; &lt;a href=&quot;https://github.com/ulaulaman/widget-for-co-authors&quot; class=&quot;badge badge-dark&quot; target=&quot;github&quot;&gt;Repository ~GitHub&lt;/a&gt;
+
+The plugin add a widget and a shortcode in order to show authors of an article. It is compatible with Co-Authors Plus.
+
+# Description
+[Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) is one of the most useful plugin for multiple authors blogs. This plugin add a widget to add users' avatars to post also for guest authors and for posts with multiple authors.
+You can also add avatars with a shordcode [blog-post-coauthors].
+The plugin add also a slider in order to show user's profile. If you want change the style, you can modify blog-spoiler.css file in the plugin folder.
+
+# Installation
+1.  Make sure that Co-Authors Plus is installed and active.
+2. Extract the widget-for-coauthors.zip file and upload its contents to the /wp-content/plugins/ directory. Alternately, you can install directly from the Plugin directory within your WordPress Install.
+3. Activate the plugin through the \&quot;Plugins\&quot; menu in WordPress.
+4. Add the widget to your sidebar or the shortcode to your posts or pages.
+
+# Changelog
+&lt;strong&gt;0.5.3 add the correct lang files&lt;/strong&gt;&lt;br/&gt;
+0.5.2 fix error code in domain name in widget&lt;br/&gt;
+0.5.1 fix error code in domain name for messages&lt;br/&gt;
+0.5 support for translations&lt;br/&gt;
+0.4 translation italian messages in english&lt;br/&gt;
+0.3.1 test with wp 4.9.2&lt;br/&gt;
+0.3 add profile link and css&lt;br/&gt;
+0.2 creation of the widget to show authors' avatars&lt;br/&gt;
+0.1 creation of the shortcode to add post's authors
+
+# Screenshot
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://github.com/ulaulaman/widget-for-co-authors/blob/master/assets/screenshot-1.jpg?raw=true&quot; /&gt;&lt;/div&gt;
+&lt;em&gt;The result of the widget in a multiple authors post&lt;/em&gt;</pre>
+</div>
 <div created="20131223104948433" creator="Stephan Hradek" description="Will display a tiddler's code." modified="20200815141208429" modifier="ulaulaman" tags="template" title="code">
 <pre>&lt;pre&gt;&lt;$view field=&quot;text&quot;/&gt;&lt;/pre&gt;</pre>
 </div>
-<div created="20200728191228347" creator="ulaulaman" modified="20200824121616396" modifier="ulaulaman" tags="[[plugin wordpress]] Menu github" title="EduINAF" type="text/x-markdown">
+<div created="20200728191228347" creator="ulaulaman" modified="20200829172701679" modifier="ulaulaman" tags="[[plugin wordpress]] Menu github" title="EduINAF" type="text/x-markdown">
 <pre>&lt;&lt;dbadge &quot;~EduINAF&quot; &quot;2020.0824&quot; &quot;info&quot;&gt;&gt; &lt;a href=&quot;https://github.com/ulaulaman/eduinaf&quot; class=&quot;badge badge-dark&quot; target=&quot;github&quot;&gt;Repository ~GitHub&lt;/a&gt;
 
 Plugin wordpress che aggiunge varie funzionalità al sito [Edu INAF](https://edu.inaf.it/) senza modificare direttamente il codice php del tema.
@@ -12103,15 +12141,16 @@ Before you start storing important information in ~TiddlyWiki it is vital to mak
 See the [[control panel|$:/ControlPanel]] for more options.
 </pre>
 </div>
-<div created="20200816230529282" creator="ulaulaman" modified="20200824122111087" modifier="ulaulaman" title="Gianluigi Filippelli">
+<div created="20200816230529282" creator="ulaulaman" modified="20200829173636941" modifier="ulaulaman" title="Gianluigi Filippelli">
 <pre>&lt;&lt;tabs tabsList:&quot;[tag[gf]!tag[advanced]]&quot; default:&quot;Italiano&quot; class:&quot;tc-vertical&quot;&gt;&gt;
 
 {{Lavoro}}
 
 {{Blog}}
 
-{{GitHubRepository}}
+{{WordpressPlugin}}
 
+{{GitHubRepository}}
 </pre>
 </div>
 <div created="20200817000643565" creator="ulaulaman" modified="20200824122036219" modifier="ulaulaman" title="GitHubRepository">
@@ -12359,15 +12398,15 @@ Un //repository// di grafiche e infografiche realizzate con il pacchetto //tikzd
 <div created="20200815123143434" creator="ulaulaman" modified="20200815171002483" modifier="ulaulaman" tags="example" title="twitterFollowButtonExample">
 <pre>&lt;tr&gt;&lt;td width=&quot;50%;&quot;&gt;{{ulaulaman||twitterFollowButton}}&lt;/td&gt;&lt;td width=&quot;50%;&quot;&gt;{{edu_inaf||twitterFollowButton}}&lt;/td&gt;&lt;/tr&gt;</pre>
 </div>
-<div caption="ulaulaman" created="20200728124602616" creator="ulaulaman" list-before="Menu" modified="20200817001857854" modifier="ulaulaman" tags="$:/tags/SideBar" title="ulaulaman">
-<pre>&lt;table&gt;&lt;tr&gt;&lt;td width=&quot;15%;&quot;&gt;{{$:/favicon.ico}}&lt;/td&gt;
-&lt;td width=&quot;85%;&quot;&gt;Wikipediano, divulgatore e blogger scientifico.
+<div caption="ulaulaman" created="20200728124602616" creator="ulaulaman" list-before="Menu" modified="20200829173304570" modifier="ulaulaman" tags="$:/tags/SideBar" title="ulaulaman">
+<pre>&lt;&lt;image-pretty img:&quot;$:/favicon.ico&quot; width:&quot;50px&quot; align:&quot;left&quot; tooltip:&quot;icon and user avatar&quot;&gt;&gt; [[twitter|https://twitter.com/ulaulaman]] | [[instagram|https://www.instagram.com/ulaulaman]] | [[github|https://github.com/ulaulaman]] | [[deviantart|https://www.deviantart.com/ulaulaman]]
 
-[[twitter|https://twitter.com/ulaulaman]] | [[instagram|https://www.instagram.com/ulaulaman]] | [[github|https://github.com/ulaulaman]] | [[deviantart|https://www.deviantart.com/ulaulaman]]&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;small&gt;Powered by [[whitespace theme|http://j.d.whitespace.tiddlyspot.com/]]&lt;/small&gt;</pre>
 </div>
-<div created="20200812150749260" creator="ulaulaman" modified="20200812151046156" modifier="ulaulaman" tags="github" title="WidgetForCoAuthors">
-<pre>| ciao | ciao |</pre>
+<div created="20200829173457215" creator="ulaulaman" modified="20200829173737366" modifier="ulaulaman" tags="Menu" title="WordpressPlugin">
+<pre>!! Wordpress Plugin
+
+&lt;&lt;TagTable &quot;Wordpress&quot;&gt;&gt;</pre>
 </div>
 
 
