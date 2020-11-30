@@ -1,0 +1,54 @@
+\documentclass[latin1,helvetica,narrow,italian,noflag,nologo,notitle]{europecv}
+\usepackage{graphicx}
+\usepackage[utf8x]{inputenc}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[hyperindex]{hyperref}
+\pdfadjustspacing=1
+\fi
+%
+\usepackage{hyperref}
+ \hypersetup{
+  pdfpagemode=UseOutlines,
+  %pdfstartview=FitV,
+  %bookmarksopen,
+  %bookmarksopenlevel=-1,
+  pdftitle=Curriculum Vitae,
+  pdfauthor=Gianluigi Filippelli,
+  %pdfsubject=,
+  pdfkeywords=LaTeX
+  %pdfpagemode=FullScreen
+  }
+%
+ %\ecvExtraRowHeight{10pt}
+ %\ecvColSep{20pt}
+ \ecvLeftColumnWidth{3cm}
+%
+ \ecvname{Filippelli Gianluigi}
+  \ecvfootername{G.Filippelli}
+ \ecvaddress{Via Paolo Lomazzo n.59, 20154, Milano, Italia}
+ \ecvtelephone{3392315618}
+ %\ecvemail{\href{mailto:gianluigi.filippelli@gmail.com}{gianluigi.filippelli@gmail.com}
+ \ecvnationality{Italiano}
+ \ecvdateofbirth{02/02/1977}
+ %\ecvgender{Maschio}
+ %\ecvsetion{Percorso di studio}
+%
+\begin{document}
+ \begin{center}
+  {\Large {\bf Curriculum Vitae}}
+ \end{center}
+ \begin{europecv}
+  \ecvpersonalinfo
+%
+% Curriculum Studiorum
+%
+  \input{pezzi/studiorum}
+  \input{pezzi/ricerca02}
+  \input{pezzi/pubblicazioni}
+    \input{pezzi/divulgazione}
+  \input{pezzi/informatica}
+  %\input{pezzi/comics}
+  \input{pezzi/language}
+ \end{europecv}
+\end{document}

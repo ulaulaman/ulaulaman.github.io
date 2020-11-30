@@ -1,0 +1,53 @@
+\documentclass[a4paper,latin1,italian]{article}
+
+\usepackage{tabularx}
+
+%\usepackage{doublespace}
+%\setstretch{1.2}
+
+\usepackage[latin1,utf8x]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{ae}
+\usepackage[T1]{fontenc}
+\usepackage{CV}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[hyperindex]{hyperref}
+\pdfadjustspacing=1
+\fi
+%
+\usepackage{hyperref}
+ \hypersetup{
+  pdfpagemode=UseOutlines,
+  %pdfstartview=FitV,
+  %bookmarksopen,
+  %bookmarksopenlevel=-1,
+  pdftitle=Curriculum Vitae,
+  pdfauthor=Gianluigi Filippelli,
+  %pdfsubject=,
+  pdfkeywords=LaTeX
+  %pdfpagemode=FullScreen
+  }
+
+\begin{document}
+
+\pagestyle{empty}
+
+%Ueberschrift
+\begin{center}
+\huge{\textsc{Curriculum Vitae}}
+\vspace{\baselineskip}
+
+\Large{\textsc{Gianluigi Filippelli}}
+\end{center}
+\vspace{1.5\baselineskip}
+
+ %\begin{itemize}
+  %\item Ph.D thesis: {\em Rappresentazioni proiettive: Applicazioni alla teoria quantistica}\footnote{Ray representations: Applications to quantum theory}, 2006, Universit� della Calabria
+  %\item {\em Time dependent quantum generators for the Galilei group}, submitted to {\em Reports on Mathematical Physics}
+ %\end{itemize}
+%\input{pezzi/englishR}
+\input{pezzi/no_activities_ita}
+%\input{pezzi/englishR}
+
+\end{document}
