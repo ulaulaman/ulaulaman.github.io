@@ -410,7 +410,7 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
 <div created="20200815145319810" creator="ulaulaman" modified="20200815145609325" modifier="ulaulaman" title="$:/config/SideBar/Visibility/Menu">
 <pre>show</pre>
 </div>
-<div created="20200904194810599" creator="ulaulaman" modified="20211011150322092" modifier="ulaulaman" title="$:/config/Whitespace/search">
+<div created="20200904194810599" creator="ulaulaman" modified="20211018221237122" modifier="ulaulaman" title="$:/config/Whitespace/search">
 <pre>no</pre>
 </div>
 <div created="20200728190149332" creator="ulaulaman" modified="20200728190152217" modifier="ulaulaman" title="$:/config/Whitespace/sidebar">
@@ -11377,10 +11377,10 @@ exports.run = function(tag) {
 <div created="20200728124256197" creator="u" modified="20200728124300028" modifier="ulaulama" title="$:/status/UserName">
 <pre>ulaulaman</pre>
 </div>
-<div created="20211013110900174" creator="ulaulaman" list="[[Gianluigi Filippelli]]" modified="20211013110900175" modifier="ulaulaman" title="$:/StoryList">
+<div created="20211018220909167" creator="ulaulaman" list="[[Gianluigi Filippelli]]" modified="20211018221245336" modifier="ulaulaman" title="$:/StoryList">
 <pre></pre>
 </div>
-<div created="20200904194810600" creator="ulaulaman" modified="20211011150322093" modifier="ulaulaman" title="$:/temp/advancedsearch">
+<div created="20200904194810600" creator="ulaulaman" modified="20211018221237124" modifier="ulaulaman" title="$:/temp/advancedsearch">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -11754,7 +11754,7 @@ For learning plugin features, syntax, tutorial and examples see the plugin demo 
 " requires-reload="no" server-url="https://kookma.github.io/TW-PluginLibrary/library/index.html" source="https://github.com/kookma/TW-Utility" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://kookma.github.io/TW-PluginLibrary/library/index.html/$:/plugins/kookma/utility" type="text/vnd.tiddlywiki" version="2.1.2">
 <pre></pre>
 </div>
-<div created="20200904194735260" creator="ulaulaman" modified="20211011150322094" modifier="ulaulaman" title="$:/temp/search">
+<div created="20200904194735260" creator="ulaulaman" modified="20211018221237126" modifier="ulaulaman" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20200824104326780" creator="ulaulaman" modified="20200824104326780" modifier="ulaulaman" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://kookma.github.io/TW-PluginLibrary/library/index.html" url="https://kookma.github.io/TW-PluginLibrary/library/index.html">
@@ -11968,8 +11968,8 @@ With title and background:
 
 In inglese: [[Doc Madhattan|http://docmadhattan.fieldofscience.com/]] | [[for Mathematics in Europe|http://mathematics-in-europe.eu/?cat=154]]</pre>
 </div>
-<div created="20200812150738415" creator="ulaulaman" modified="20200904194411090" modifier="ulaulaman" tags="github" title="BookTemplate" type="text/x-markdown">
-<pre>&lt;&lt;dbadge &quot;Book Template&quot; &quot;2020.0813&quot; &quot;info&quot;&gt;&gt; &lt;a href=&quot;https://github.com/ulaulaman/book-template&quot; class=&quot;badge badge-dark&quot; target=&quot;github&quot;&gt;Repository ~GitHub&lt;/a&gt;
+<div created="20200812150738415" creator="ulaulaman" modified="20211018221054251" modifier="ulaulaman" tags="github" title="BookTemplate" type="text/x-markdown">
+<pre>&lt;&lt;dbadge &quot;Book Template&quot; &quot;2021.1016&quot; &quot;info&quot;&gt;&gt; &lt;a href=&quot;https://github.com/ulaulaman/book-template&quot; class=&quot;badge badge-dark&quot; target=&quot;github&quot;&gt;Repository ~GitHub&lt;/a&gt;
 
 *Plugin* che aggiunge uno *shortcode* per la creazione di un box con i dati editoriali di un libro o di un fumetto.
 
@@ -11988,6 +11988,7 @@ In caso di fumetto o libro illustrato, inserire il colore
 [bookdata ... col=&quot;colore,b/n&quot;]
 
 Possono essere inseriti opzionalmente ISBN [bookdata ... isbn=&quot;codice&quot;] o ISSN [bookdata ... issn=&quot;codice&quot;], il traduttore [bookdata ... translator=&quot;Traduttore&quot;], l'età consigliata  [bookdata ... age=&quot;età consigliata&quot;] ed eventuali note aggiuntive [dati_editoriali ... notes=&quot;Note aggiuntive&quot;]&lt;br/&gt;
+Inoltre è possibile personalizzare il messaggio di apertura della scheda con il parametro intro e inserire un link relativo al libro con il parametro url.&lt;br/&gt;
 I dati possono essere inseriti anche in maniera disordinata: ci penserà il plugin a riordinarli!
 
 ## Screenshot
@@ -12001,6 +12002,7 @@ I dati possono essere inseriti anche in maniera disordinata: ci penserà il plug
 5. In alternativa scarica il [*file* .zip](https://github.com/ulaulaman/book-template/releases/download/2020.0813/book-template.2020.0813.zip) in allegato alla [release 2020.0813](https://github.com/ulaulaman/book-template/releases/tag/2020.0813), quindi scompattalo all'interno della cartella dei *plugin* della tua installazione wordpress
 
 ## Changelog
+* 2021.1016 Aggiunti due nuovi parametri: intro, per personalizzare la prima righa, e url per inserire in corrispondenza del titolo una possibile scheda dello stesso
 * 2020.0813 Aggiunto allo *shortcode* il campo dell'età consigliata
 * 2020.0718.1 Corretti errori codice
 * 2020.0718 Aggiunti file delle lingue: italiano di *default*, inglese come traduzione
@@ -12131,8 +12133,8 @@ The plugin add also a slider in order to show user's profile. If you want change
 <div created="20131223104948433" creator="Stephan Hradek" description="Will display a tiddler's code." modified="20200815141208429" modifier="ulaulaman" tags="template" title="code">
 <pre>&lt;pre&gt;&lt;$view field=&quot;text&quot;/&gt;&lt;/pre&gt;</pre>
 </div>
-<div created="20200728191228347" creator="ulaulaman" modified="20211008150425758" modifier="ulaulaman" tags="[[plugin wordpress]] Menu github" title="EduINAF" type="text/x-markdown">
-<pre>&lt;&lt;dbadge &quot;~EduINAF&quot; &quot;2021.1007&quot; &quot;info&quot;&gt;&gt; &lt;a href=&quot;https://github.com/ulaulaman/eduinaf&quot; class=&quot;badge badge-dark&quot; target=&quot;github&quot;&gt;Repository ~GitHub&lt;/a&gt;
+<div created="20200728191228347" creator="ulaulaman" modified="20211018221220394" modifier="ulaulaman" tags="[[plugin wordpress]] Menu github" title="EduINAF" type="text/x-markdown">
+<pre>&lt;&lt;dbadge &quot;~EduINAF&quot; &quot;2021.1018&quot; &quot;info&quot;&gt;&gt; &lt;a href=&quot;https://github.com/ulaulaman/eduinaf&quot; class=&quot;badge badge-dark&quot; target=&quot;github&quot;&gt;Repository ~GitHub&lt;/a&gt;
 
 Plugin wordpress che aggiunge varie funzionalità al sito [Edu INAF](https://edu.inaf.it/) senza modificare direttamente il codice php del tema.
 
@@ -12175,8 +12177,9 @@ Si consiglia di clonare il [*repository* originale](https://github.com/Robbertdk
 * 0.2.2 Sistemata la ricerca in modo tale da non far comparire i *post* con *status* personalizzato.
 * 0.2.1 Traduzione in italiano dei messaggi senza l'uso dei *file* multilingua. Modifiche nel *css* per migliorare leggibilità di parte della spalla dei filtri. Aggiunta del riassunto nel *loop* dei *post*.</pre>
 </div>
-<div created="20200728191710511" creator="ulaulaman" modified="20211008150308978" modifier="ulaulaman" tags="changelog eduinaf" title="EduINAFChangelog" type="text/x-markdown">
-<pre>* 2021.1007
+<div created="20200728191710511" creator="ulaulaman" modified="20211018221201929" modifier="ulaulaman" tags="changelog eduinaf" title="EduINAFChangelog" type="text/x-markdown">
+<pre>* 2021.1018 Aggiornati gli shortcode del concorso Rodari per l'anno 2021
+* 2021.1007
   * Aggiornato lo *shortcode* dei *loop* personalizzati con la distinzione tra 3 stili differenti
   * Aggiunti gli shortcode e i documenti relativi al concorso Via Lattea Quaraquarinci dedicato a Gianni Rodari
 * 2021.0628
