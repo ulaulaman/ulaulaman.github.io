@@ -313,6 +313,8 @@ Error message and password prompt
 
 <li>code</li>
 
+<li>ebook</li>
+
 <li>EduINAF</li>
 
 <li>EduINAFAjaxFilter</li>
@@ -352,6 +354,8 @@ Error message and password prompt
 <li>Menu</li>
 
 <li>Physics</li>
+
+<li>Presentazioni</li>
 
 <li>svg</li>
 
@@ -410,7 +414,7 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
 <div created="20200815145319810" creator="ulaulaman" modified="20200815145609325" modifier="ulaulaman" title="$:/config/SideBar/Visibility/Menu">
 <pre>show</pre>
 </div>
-<div created="20200904194810599" creator="ulaulaman" modified="20211022011045820" modifier="ulaulaman" title="$:/config/Whitespace/search">
+<div created="20200904194810599" creator="ulaulaman" modified="20211022230934036" modifier="ulaulaman" title="$:/config/Whitespace/search">
 <pre>no</pre>
 </div>
 <div created="20200728190149332" creator="ulaulaman" modified="20200728190152217" modifier="ulaulaman" title="$:/config/Whitespace/sidebar">
@@ -11377,7 +11381,7 @@ exports.run = function(tag) {
 <div created="20200728124256197" creator="u" modified="20200728124300028" modifier="ulaulama" title="$:/status/UserName">
 <pre>ulaulaman</pre>
 </div>
-<div created="20211022010517637" creator="ulaulaman" list="[[Gianluigi Filippelli]]" modified="20211022011051330" modifier="ulaulaman" title="$:/StoryList">
+<div created="20211022230819275" creator="ulaulaman" list="[[Gianluigi Filippelli]]" modified="20211022230924678" modifier="ulaulaman" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200904194810600" creator="ulaulaman" modified="20211022011045821" modifier="ulaulaman" title="$:/temp/advancedsearch">
@@ -11396,19 +11400,19 @@ exports.run = function(tag) {
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///home/gianluigi/github/ulaulaman.github.io/index.html&quot;
+            &quot;text&quot;: &quot;https://ulaulaman.github.io/&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
-            &quot;text&quot;: &quot;&quot;
+            &quot;text&quot;: &quot;ulaulaman.github.io&quot;
         },
         &quot;$:/info/url/hostname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/hostname&quot;,
-            &quot;text&quot;: &quot;&quot;
+            &quot;text&quot;: &quot;ulaulaman.github.io&quot;
         },
         &quot;$:/info/url/protocol&quot;: {
             &quot;title&quot;: &quot;$:/info/url/protocol&quot;,
-            &quot;text&quot;: &quot;file:&quot;
+            &quot;text&quot;: &quot;https:&quot;
         },
         &quot;$:/info/url/port&quot;: {
             &quot;title&quot;: &quot;$:/info/url/port&quot;,
@@ -11416,7 +11420,7 @@ exports.run = function(tag) {
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/home/gianluigi/github/ulaulaman.github.io/index.html&quot;
+            &quot;text&quot;: &quot;/&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -11424,7 +11428,7 @@ exports.run = function(tag) {
         },
         &quot;$:/info/url/origin&quot;: {
             &quot;title&quot;: &quot;$:/info/url/origin&quot;,
-            &quot;text&quot;: &quot;null&quot;
+            &quot;text&quot;: &quot;https://ulaulaman.github.io&quot;
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
@@ -11754,7 +11758,7 @@ For learning plugin features, syntax, tutorial and examples see the plugin demo 
 " requires-reload="no" server-url="https://kookma.github.io/TW-PluginLibrary/library/index.html" source="https://github.com/kookma/TW-Utility" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://kookma.github.io/TW-PluginLibrary/library/index.html/$:/plugins/kookma/utility" type="text/vnd.tiddlywiki" version="2.1.2">
 <pre></pre>
 </div>
-<div created="20200904194735260" creator="ulaulaman" modified="20211022011045821" modifier="ulaulaman" title="$:/temp/search">
+<div created="20200904194735260" creator="ulaulaman" modified="20211022230934040" modifier="ulaulaman" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20200824104326780" creator="ulaulaman" modified="20200824104326780" modifier="ulaulaman" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://kookma.github.io/TW-PluginLibrary/library/index.html" url="https://kookma.github.io/TW-PluginLibrary/library/index.html">
@@ -12134,6 +12138,13 @@ The plugin add also a slider in order to show user's profile. If you want change
 <div created="20131223104948433" creator="Stephan Hradek" description="Will display a tiddler's code." modified="20200815141208429" modifier="ulaulaman" tags="template" title="code">
 <pre>&lt;pre&gt;&lt;$view field=&quot;text&quot;/&gt;&lt;/pre&gt;</pre>
 </div>
+<div created="20211022230936650" creator="ulaulaman" modified="20211022232020836" modifier="ulaulaman" tags="" title="ebook">
+<pre>!! E-Book
+
+* //Galileo Galilei. Riflessioni su un fisico// con ''Marco Fulvio Barozzi'': [[pdf|https://gitea.it/ulaulaman/ebook_presentazioni/src/branch/master/ebook/galileo_galilei.pdf]]
+* //Night in Cosmo Brain//: [[pdf|https://gitea.it/ulaulaman/ebook_presentazioni/src/branch/master/ebook/night_cosmobrain.pdf]]
+* //Notizie pi greche//: [[pdf|https://gitea.it/ulaulaman/ebook_presentazioni/src/branch/master/ebook/piday.pdf]]</pre>
+</div>
 <div created="20200728191228347" creator="ulaulaman" modified="20211022011041533" modifier="ulaulaman" tags="[[plugin wordpress]] Menu github" title="EduINAF" type="text/x-markdown">
 <pre>&lt;&lt;dbadge &quot;~EduINAF&quot; &quot;2021.1022&quot; &quot;info&quot;&gt;&gt; &lt;a href=&quot;https://github.com/ulaulaman/eduinaf&quot; class=&quot;badge badge-dark&quot; target=&quot;github&quot;&gt;Repository ~GitHub&lt;/a&gt;
 
@@ -12433,12 +12444,16 @@ Before you start storing important information in ~TiddlyWiki it is vital to mak
 See the [[control panel|$:/ControlPanel]] for more options.
 </pre>
 </div>
-<div created="20200816230529282" creator="ulaulaman" modified="20210319081938326" modifier="ulaulaman" title="Gianluigi Filippelli">
+<div created="20200816230529282" creator="ulaulaman" modified="20211022231122958" modifier="ulaulaman" title="Gianluigi Filippelli">
 <pre>&lt;&lt;tabs tabsList:&quot;[tag[gf]!tag[advanced]]&quot; default:&quot;Italiano&quot; class:&quot;tc-vertical&quot;&gt;&gt;
 
 {{Lavoro}}
 
 {{Blog}}
+
+{{ebook}}
+
+{{Presentazioni}}
 
 {{WordpressPlugin}}
 
@@ -12526,24 +12541,10 @@ For example the show twitterFollowButton's code use `{{twitterFollowButton||code
 
 Leggo anche molti libri e fumetti e collaboro con una webzine di fumetti.</pre>
 </div>
-<div created="20200817000524328" creator="ulaulaman" modified="20210201210506326" modifier="ulaulaman" tags="about" title="Lavoro">
+<div created="20200817000524328" creator="ulaulaman" modified="20211022231056008" modifier="ulaulaman" tags="about" title="Lavoro">
 <pre>!! Lavoro
 
-Caporedattore centrale di [[Edu INAF|https://edu.inaf.it/]]. Vedi tutti i [[miei articoli|https://edu.inaf.it/author/filippelli/]].
-
-!!! Presentazioni
-
-Presentazioni realizzate con //beamer// nel corso della mia attività per l'Osservatorio Astronomico di Brera e per l'INAF in generale
-
-!!!! Liceo Cavalleri di Parabiago
-
-Presentazioni realizzate per una serie di incontri con gli insegnanti al Liceo *Cavalleri* di Parabiago (Milano)
-
-* //L'universo ottico//: [[pdf|https://github.com/ulaulaman/presentazioni/blob/master/parabiago/pdf/universo_ottico.pdf]] | [[tex|https://github.com/ulaulaman/presentazioni/blob/master/parabiago/universo_ottico.tex]]
-* //Astronomia planetaria: transiti ed esopianeti in classe//: [[pdf|https://github.com/ulaulaman/presentazioni/blob/master/parabiago/pdf/transito.pdf]] | [[tex|https://github.com/ulaulaman/presentazioni/blob/master/parabiago/transito.tex]]
-* //Il meraviglioso mondo quantistico//: [[pdf|https://github.com/ulaulaman/presentazioni/blob/master/parabiago/pdf/mondo_quantistico.pdf]] | [[tex|https://github.com/ulaulaman/presentazioni/blob/master/parabiago/mondo_quantistico.tex]]
-* //Vincere un Nobel per la fisica con i disegni//: [[pdf|https://github.com/ulaulaman/presentazioni/blob/master/parabiago/pdf/feynman.pdf]] | [[tex|https://github.com/ulaulaman/presentazioni/blob/master/parabiago/feynman.tex]]
-* //Una storia di paradossi, disuguaglianze e baffi//: [[pdf|https://github.com/ulaulaman/presentazioni/blob/master/parabiago/pdf/paradossi_disuguaglianze.pdf]] | [[tex|https://github.com/ulaulaman/presentazioni/blob/master/parabiago/paradossi_disuguaglianze.tex]]</pre>
+Caporedattore centrale di [[Edu INAF|https://edu.inaf.it/]]. Vedi tutti i [[miei articoli|https://edu.inaf.it/author/filippelli/]].</pre>
 </div>
 <div created="20200815141511591" creator="ulaulaman" modified="20200815171212803" modifier="ulaulaman" tags="[[how to]] Macros" title="Macros">
 <pre>I try to use original Macros' system, whitout any results. After a brief research, I find [[TW5 Magick|http://tw5magick.tiddlyspot.com/]], a collections of various tricks. Here i find a useful and [[very simple way to define macros|http://tw5magick.tiddlyspot.com/#A%20global%20Macro%20-%20with%20limitations]].
@@ -12608,6 +12609,26 @@ as first row in [[twitter.svg]].
 |:-------------|:------------------|:------|
 | english | [tex source](https://github.com/ulaulaman/tikzdraw/blob/master/physics/michelson_morley.tex) | [pdf](https://github.com/ulaulaman/tikzdraw/blob/master/physics/pdf/michelson_morley.pdf) |
 | italian | [tex source](https://github.com/ulaulaman/tikzdraw/blob/master/physics/michelson_morley_it.tex) | [pdf](https://github.com/ulaulaman/tikzdraw/blob/master/physics/pdf/michelson_morley_it.pdf) |</pre>
+</div>
+<div created="20211022230934036" creator="ulaulaman" modified="20211022231759101" modifier="ulaulaman" title="Presentazioni">
+<pre>!! Presentazioni
+
+Raccolta delle presentazioni che ho realizzato nel corso degli anni. Sono per lo più realizzate con //Beamer//, pacchetto di //LaTeX// costruito allo scopo. Per alcune di esse propongo oltre al //file// .pdf, anche il sorgente .tex. Per poter consultare tutti i //file//, inclusi i sorgenti, [[rimando al repository su gitea.it|https://gitea.it/ulaulaman/ebook_presentazioni]].
+
+!!!! Liceo Cavalleri di Parabiago
+
+Presentazioni realizzate per una serie di incontri con gli insegnanti al Liceo *Cavalleri* di Parabiago (Milano)
+
+* //L'universo ottico//: [[pdf|https://gitea.it/ulaulaman/ebook_presentazioni/src/branch/master/parabiago/pdf/universo_ottico.pdf]]
+* //Astronomia planetaria: transiti ed esopianeti in classe//: [[pdf|https://gitea.it/ulaulaman/ebook_presentazioni/src/branch/master/parabiago/pdf/transito.pdf]]
+* //Il meraviglioso mondo quantistico//: [[pdf|https://gitea.it/ulaulaman/ebook_presentazioni/src/branch/master/parabiago/pdf/mondo_quantistico.pdf]]
+* //Vincere un Nobel per la fisica con i disegni//: [[pdf|https://gitea.it/ulaulaman/ebook_presentazioni/src/branch/master/parabiago/pdf/feynman.pdf]]
+* //Una storia di paradossi, disuguaglianze e baffi//: [[pdf|https://gitea.it/ulaulaman/ebook_presentazioni/src/branch/master/parabiago/pdf/paradossi_disuguaglianze.pdf]]
+
+//Come scrivere un articolo divulgativo sulla scienza//: intervento in una classe quarta
+
+* Presentazione: [[pdf|https://gitea.it/ulaulaman/ebook_presentazioni/src/branch/master/parabiago/pdf/parabiago_IFS.pdf]]
+* Testo intervento: [[pdf|https://gitea.it/ulaulaman/ebook_presentazioni/src/branch/master/parabiago/pdf/parabiago_IFS-articolo.pdf]]</pre>
 </div>
 <div created="20200815145229557" creator="ulaulaman" modified="20200815145300982" modifier="ulaulaman" tags="[[how to]] svg" title="svg">
 <pre>[[Source for svg icons|http://svgicons.sparkk.fr/]]</pre>
